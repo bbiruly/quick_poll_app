@@ -56,10 +56,10 @@ Visit: [http://localhost:5173](http://localhost:5173) in your browser
 ## 📌 API Endpoints
 | Method | Endpoint       | Description        |
 |--------|--------------|------------------|
-| GET    | `/api/polls`  | Fetch all polls   |
-| POST   | `/api/polls`  | Create a new poll |
-| POST   | `/api/vote`   | Vote on a poll    |
-| GET    | `/api/results` | Get poll results  |
+| GET    | `/api/quickpoll/polls`  | Fetch all polls   |
+| POST   | `/api/quickpoll/polls`  | Create a new poll |
+| POST   | `/api/quickpoll/:id/vote`   | Vote on a poll    |
+
 
 ---
 
