@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
 import Dashboard from "./pages/dashboard/Dashboard";
-import Home from "./pages/poll-home/Home";
 
 const App = () => {
   return (
@@ -12,9 +11,7 @@ const App = () => {
 
         <Routes>
           {/* Protected Route - Dashboard and Nested Routes */}
-          <Route path="/home" element={<Dashboard />}>
-            {/* Nested Routes for Dashboard */}
-            <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Dashboard />}>
           </Route>
         </Routes>
       </div>
