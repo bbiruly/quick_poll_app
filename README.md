@@ -24,7 +24,7 @@ A simple polling app where users can:
 
 ### 1️⃣ Clone the repository
 ```sh
-git clone https://github.com/bbiruly/quick-polling-app.git
+git clone https://github.com/bbiruly/quick_poll_app
 cd quick-polling-app
 ```
 
