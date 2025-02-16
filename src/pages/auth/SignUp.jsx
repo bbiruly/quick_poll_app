@@ -12,7 +12,6 @@ import { MdLockOutline } from "react-icons/md";
 import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import logo from "../../assets/react.svg";
-import { api } from "../../constant/constant";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -46,7 +45,7 @@ const SignUp = () => {
     try {
       //CALL API SIGN UP ENPONT 
       const response = await axios.post(
-        `${api}/auth/register`,
+        `${import.meta.env.VITE_API_URL}/auth/register`,
         { name, email, password }
       );
 
